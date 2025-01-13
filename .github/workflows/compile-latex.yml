@@ -17,7 +17,9 @@ jobs:
     - name: Set Up LaTeX Environment
       uses: xu-cheng/latex-action@v3
       with:
-        root_file: main.tex  # Replace with your main .tex file
+        root_file: |
+          ./Folder1/main.tex
+          ./Folder2/main.tex # Replace with your main .tex file
         latexmk_args: -pdf -interaction=nonstopmode -halt-on-error
 
     - name: Upload PDF
