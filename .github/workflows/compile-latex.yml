@@ -23,7 +23,7 @@ jobs:
         args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
 
     - name: Upload PDF
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: compiled-pdf
         path: |
