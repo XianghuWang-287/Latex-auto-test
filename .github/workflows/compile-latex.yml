@@ -20,7 +20,7 @@ jobs:
         root_file: |
           ./Folder1/main.tex
           ./Folder2/main.tex # Replace with your main .tex file
-        latexmk_args: -pdf -interaction=nonstopmode -halt-on-error
+        args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
 
     - name: Upload PDF
       uses: actions/upload-artifact@v3
