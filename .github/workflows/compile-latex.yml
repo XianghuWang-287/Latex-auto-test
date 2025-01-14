@@ -18,8 +18,8 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         root_file: |
-          ./Folder1/main.tex
-          ./Folder2/main.tex # Replace with your main .tex file
+          ./Folder1/Folder1.tex
+          ./Folder2/Folder2.tex
         args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
 
     - name: Upload PDF
