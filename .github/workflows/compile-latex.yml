@@ -26,4 +26,6 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: compiled-pdf
-        path: main.pdf  # Replace with the name of your output PDF
+        path: |
+          ./Folder1/Folder1.pdf
+          ./Folder2/Folder2.pdf 
